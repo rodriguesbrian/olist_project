@@ -32,6 +32,17 @@ categoria_pedido AS (
     LEFT JOIN categorys c 
         on p.product_category_name = c.product_category_name
     WHERE ip.rn = 1 
+),
+
+reviews_dedup AS (
+    SELECT 
+        order_id, 
+        review_score,
+        ROW_NUMBER() OVER(
+            PARTITION BY order_id
+            ORDER BY review_creation_date DESC
+        ) as rn
+    FROM reviews
 )
 
 SELECT
@@ -41,8 +52,9 @@ SELECT
     cp.category_en,
     pt.order_value
 FROM orders_delivered od
-JOIN reviews r 
+JOIN reviews_dedup r 
     ON od.order_id = r.order_id
+    and r.rn = 1 
 JOIN categoria_pedido cp 
     ON od.order_id = cp.order_id
 JOIN payment_total pt 
