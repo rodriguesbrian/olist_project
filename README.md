@@ -5,6 +5,20 @@
 ---
 
 
+## 📊 Dashboard Preview
+
+| Executive Summary | Breaking Point | 
+|---|---|
+| ![Executive Summary](outputs/screenshots/p1_executive_summary.jpg) | ![Breaking Point](outputs/screenshots/p3_breaking_point.jpg) 
+
+| Structural Geography | Salesperson Variable |
+|---|---|
+| ![Structural Geography](outputs/screenshots/p4_structural_geography.jpg) | ![Retention Strategy](outputs/screenshots/p5_salesperson_variable.jpg)
+
+
+---
+
+
 ## About the Project
 
 
@@ -149,7 +163,7 @@ All observed patterns were statistically validated before being included in the 
 ## Author
 
 **Brian Rodrigues**
-Data Analyst · Porto, Portugal
+Data Analyst · Lisbon, Portugal
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rodriguesbrian-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/rodriguesbrian)
 [![GitHub](https://img.shields.io/badge/GitHub-rodriguesbrian-181717?style=flat&logo=github)](https://github.com/rodriguesbrian)
